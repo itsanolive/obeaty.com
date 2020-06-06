@@ -1,0 +1,17 @@
+<section id="{{ section.section_id }}" class="page-section bg-dark text-white {{ section.background_style }}">
+  <div class="container text-center">
+    <h2 class="mb-4">{{ section.title }}!</h2>
+    <hr class="divider my-4">
+    <form action="https://getform.io/f/145d5445-238c-4cd5-b2de-dd0786fe0c91" method="POST">
+      <div class="text-left">
+      {% for input in section.inputs %}
+        <label for="{{input.title}}">{{input.label}}</label>
+        <input class="form-control" type="{{input.type}}" name="{{input.title}}" required="{{input.required}}" placeholder="{{input.placeholder}}">
+        <br>
+      {% endfor %}
+      </div>
+      <br>
+      <button class="btn btn-xl js-scroll-trigger {{ action.class | default: "btn-primary" }}" type="submit">Submit Form</button>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,33 @@
+# Site settings
+title: OBeaty Design
+logo: <img src="assets/img/logos/ob-logo.png" alt="OBeaty Design">
+description: > # this means to ignore newlines until "baseurl:"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+author: Copyright &copy; 2020 - OBeaty Design
+lang: en_US
+
+# Build settings
+safe: true # always trues on github-pages, disables _plugins/
+markdown: kramdown
+sass:
+  sass_dir: _sass
+  indentWidth: 4
+  style: compact
+  precision: 10
+assets:
+  sources:
+    - assets/css
+    - assets/img
+    - assets/js
+  compress:
+    css: true
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-coffeescript
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - build-in-docker.sh
+  - README.md
