@@ -2077,7 +2077,7 @@ a.bg-dark:hover, a.bg-dark:focus, button.bg-dark:hover, button.bg-dark:focus { b
 
 .rounded-sm { border-radius: 0.2rem !important; }
 
-.rounded { border-radius: 0.25rem !important; }
+.rounded { border-radius: 1rem !important; }
 
 .rounded-top { border-top-left-radius: 0.25rem !important; border-top-right-radius: 0.25rem !important; }
 
@@ -3147,10 +3147,10 @@ color: #212529; */ }
 
 #mainNav .navbar-nav .nav-item .nav-link.active { color: #f4623a !important; }
 
-@media (min-width: 992px) { #mainNav { box-shadow: none; background-color: transparent; }
+@media (min-width: 992px) { #mainNav { box-shadow: none; }
   #mainNav .navbar-brand { color: rgba(255, 255, 255, 0.7); }
   #mainNav .navbar-brand:hover { color: #fff; }
-  #mainNav .navbar-nav .nav-item .nav-link { color: #fff; padding: 0.75rem 1rem; }
+  #mainNav .navbar-nav .nav-item .nav-link { /*color: $ob-dk-teal;*/ padding: 0.75rem 1rem; }
   #mainNav .navbar-nav .nav-item .nav-link:hover { color: #05A19E; }
   #mainNav .navbar-nav .nav-item:last-child .nav-link { color: #4C4C4A; margin-left: 1rem; padding: 0.75rem 1.5rem; }
   #mainNav .navbar-nav .nav-item:last-child .nav-link:hover { color: #fff; }
@@ -3161,11 +3161,17 @@ color: #212529; */ }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover { color: #E3A33B; }
   #mainNav.navbar-scrolled .navbar-nav .nav-item:last-child .nav-link { color: #fff; }
   #mainNav.navbar-scrolled .navbar-nav .nav-item:last-child .nav-link:hover { color: #4C4C4A; } }
-header.masthead { padding-top: 10rem; padding-bottom: calc(10rem - 72px); background: linear-gradient(to bottom, rgba(76, 76, 74, 0.8) 0%, rgba(76, 76, 74, 0.9) 100%), url("../img/bg-masthead-2.jpg"); background-position: center; background-repeat: no-repeat; background-attachment: scroll; background-size: cover; }
+section.grid-section { margin-top: -15em; }
+@media (min-width: 992px) { section.grid-section { margin-top: -17em; } }
+section.grid-section p { min-height: 5em; }
+
+header.masthead { min-height: 90vh; padding-top: 10em; padding-bottom: calc(10rem - 72px); background: url("../img/hero-bkg-opt-3-mobile.jpg"); background-position: center; background-repeat: no-repeat; background-attachment: scroll; background-size: cover; }
+header.masthead .container { padding-top: 5em; }
+@media (min-width: 992px) { header.masthead .container { padding-top: 12em; } }
 
 header.masthead h1 { font-size: 2.25rem; }
 
-@media (min-width: 992px) { header.masthead { height: 100vh; min-height: 40rem; padding-top: 72px; padding-bottom: 0; }
+@media (min-width: 992px) { header.masthead { /*height: 90vh;*/ min-height: 80vh; padding-top: 3em; padding-bottom: 0; background: url("../img/hero-bkg-opt-3.jpg"); background-position: center; background-repeat: no-repeat; background-size: cover; }
   header.masthead p { font-size: 1.15rem; }
   header.masthead h1 { font-size: 3rem; } }
 @media (min-width: 1200px) { header.masthead h1 { font-size: 3.5rem; } }

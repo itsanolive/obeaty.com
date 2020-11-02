@@ -1,0 +1,21 @@
+<section class="grid-section pb-5" id="{{ section.section_id }}">
+  <div class="container">
+    <div class="row justify-content-center">
+
+      {%- for service in section.services -%}
+        <div class="col-md-6 text-center p-4">
+          <div class="{{ service.background_style }} rounded p-3">
+            <div class="my-5 {{ service.text-style }}">
+              <h2 class="h4 mb-5"><i class="fa-1x {{ service.icon }} text-primary mr-2"></i> {{ service.title }}</h2>
+              <div class="mb-0">
+                <p class="mb-5">{{ service.text }}</p>
+                {% include actions.html actions=service.actions %}
+              </div>
+            </div>
+          </div>
+        </div>
+      {%- endfor -%}
+
+    </div>
+  </div>
+</section>

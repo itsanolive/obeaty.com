@@ -1,15 +1,33 @@
 ---
 layout: home
 header:
-  title: Web design for people who have better things to do
+  title: Web design and development
   text: >
-    Your website should reflect all your hard work without the pain of setting it up yourself. With years of experience setting up and managing websites from one-page statics sites to full-blow e-commerce sites, my goal is to meet your needs.
-  action: # action button is optional
-    label: Help, please!
-    url: '#about'
-
+    for people who have better things to do
 
 sections:
+  - type: grid-section.html
+    section_id: ''
+    services:
+      - title: Shopify Services
+        icon: fab fa-shopify text-dark
+        background_style: bg-info
+        text-style: text-dark
+        text: I have or want a Shopify site and need help with updating components, improving performance, or streamlining how I manage my web business.
+        actions:
+          - title: Shopify servies
+            url: '#shopify'
+            class: btn-dark
+      - title: Custom Static Site
+        icon: fab fas fa-rocket text-warning
+        background_style: bg-dark
+        text-style: text-warning
+        text: I need something new and fantastic with editing capabilities and low recuring costs
+        actions:
+          - title: Hook me up!
+            url: '#custom-site'
+            class: btn-warning
+
   - type: call-to-action.html
     section_id: about
     background_style: bg-primary
