@@ -2,8 +2,9 @@
   <div class="container text-center sm:w-50 mx-auto">
     <h2 class="mb-4">{{ section.title }}!</h2>
     <hr class="divider my-4">
-    <form action="https://getform.io/f/145d5445-238c-4cd5-b2de-dd0786fe0c91" method="POST">
+    <form id="contact-form" method="POST" netlify-honeypot="bot-field" data-netlify="true">
       <div class="text-left">
+        <label for="bot-field"><input name="bot-field" /></label>
       {% for input in section.inputs %}
         <label for="{{input.title}}">{{input.label}}</label>
         {% if input.type == 'textarea' %}
