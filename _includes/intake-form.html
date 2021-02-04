@@ -4,7 +4,7 @@
     <hr class="divider my-4">
     <form id="contact-form" method="POST" netlify-honeypot="bot-field" data-netlify="true">
       <div class="text-left">
-        <label for="bot-field"><input name="bot-field" /></label>
+        <label style="display: none" for="bot-field"><input name="bot-field" /></label>
       {% for input in section.inputs %}
         <label for="{{input.title}}">{{input.label}}</label>
         {% if input.type == 'textarea' %}
