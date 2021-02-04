@@ -9714,9 +9714,12 @@ header.masthead {
     padding-top: 10%;
 
     @media (min-width: 576px) {
-      padding-top: 15%;
       padding-right: 5em;
       padding-left: 5em;
+    }
+
+    @media (min-width: 1500px) {
+      padding-top: 7%;
     }
   }
 }

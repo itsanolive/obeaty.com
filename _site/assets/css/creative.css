@@ -3167,7 +3167,8 @@ section.grid-section p { min-height: 5em; }
 
 header.masthead { min-height: 90vh; padding-top: 10em; padding-bottom: calc(10rem - 72px); background: url("../img/hero-bkg-opt-3-mobile.jpg"); background-position: center; background-repeat: no-repeat; background-attachment: scroll; background-size: cover; }
 header.masthead .container { padding-top: 10%; }
-@media (min-width: 576px) { header.masthead .container { padding-top: 15%; padding-right: 5em; padding-left: 5em; } }
+@media (min-width: 576px) { header.masthead .container { padding-right: 5em; padding-left: 5em; } }
+@media (min-width: 1500px) { header.masthead .container { padding-top: 7%; } }
 
 header.masthead h1 { font-size: 2.25rem; }
 
