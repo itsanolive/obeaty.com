@@ -13,19 +13,19 @@ sections:
         icon: fab fa-shopify text-dark
         background_style: bg-info
         text-style: text-dark
-        text: I have or want a Shopify site and need help with updating components, improving performance, or streamlining how I manage my web business.
+        text: Do you have or want a Shopify site and need help with updating components, improving performance, or streamlining how you manage your web business?
         actions:
-          - title: Shopify servies
-            url: '#shopify'
+          - title: Shopify services
+            url: '/#form'
             class: btn-dark
-      - title: Custom Static Site
+      - title: Custom Site
         icon: fab fas fa-rocket text-warning
         background_style: bg-dark
         text-style: text-warning
-        text: I need something new and fantastic with editing capabilities and low recuring costs
+        text: Do you need something new and fantastic with editing capabilities and low recuring costs?
         actions:
           - title: Hook me up!
-            url: '#custom-site'
+            url: '/#form'
             class: btn-warning
 
   - type: call-to-action.html
@@ -44,17 +44,14 @@ sections:
     title: At Your Service
     services:
       - title: Shopify E-comm
-        text: Consulting or Initial Setup for Shopify E-Commerce Sites
+        text: Consult, set up, or customize Shopify E-Commerce Sites
         icon: fab fa-shopify text-info
         url:
-      - title: Wordpress
-        text: Modify or create a new Wordpress Site
-        icon: fab fa-wordpress text-info
       - title: Style/Design Updates
-        text: We update dependencies to keep things fresh.
+        text: Update your site to keep things fresh.
         icon: fas fa-code text-info
       - title: Graphic Design
-        text: Branding, creative artwork, and layout design
+        text: Create branding, creative artwork, and layout design
         icon: fas fa-pen-nib text-info
 
   - type: portfolio.html
@@ -117,7 +114,7 @@ sections:
         required: true
       - title: goals
         label: Project summary and goal
-        type: text
+        type: textarea
         required: true
         placeholder: New e-commerce website, update to existing site, branding help, simple one-page site, etc...
       - title: type
@@ -130,8 +127,8 @@ sections:
     section_id: contacts
     title: Let's Get In Touch!
     text: >-
-      Ready to start your next project with us? Give us a call or send us an email
-      and we will get back to you as soon as possible!
+      Ready to start your next project with us? Give us a call or send me an email
+      and I will get back to you as soon as possible!
     actions:
     - title: E-Mail
       icon: fa-paper-plane

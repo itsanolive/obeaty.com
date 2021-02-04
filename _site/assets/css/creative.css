@@ -51,9 +51,9 @@ sub { bottom: -.25em; }
 
 sup { top: -.5em; }
 
-a { color: #05A19E; text-decoration: none; background-color: transparent; }
+a { color: #05556E; text-decoration: none; background-color: transparent; }
 
-a:hover { color: #50C7C5; text-decoration: underline; }
+a:hover { color: var(--grey-dark); text-decoration: underline; }
 
 a:not([href]):not([tabindex]) { color: inherit; text-decoration: none; }
 
@@ -1273,7 +1273,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .nav-tabs .nav-link.disabled { color: #6c757d; background-color: transparent; border-color: transparent; }
 
-.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link { color: #495057; background-color: #fff; border-color: #dee2e6 #dee2e6 #fff; }
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link { color: #05A19E; background-color: #fff; border-color: #dee2e6 #dee2e6 #fff; }
 
 .nav-tabs .dropdown-menu { margin-top: -1px; border-top-left-radius: 0; border-top-right-radius: 0; }
 
@@ -1297,7 +1297,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .navbar-brand:hover, .navbar-brand:focus { text-decoration: none; }
 
-.navbar-nav { display: flex; flex-direction: column; padding-left: 0; margin-bottom: 0; list-style: none; }
+.navbar-nav { display: flex; flex-direction: column; padding-left: 0; margin-bottom: 0; list-style: none; text-align: center; }
 
 .navbar-nav .nav-link { padding-right: 0; padding-left: 0; }
 
@@ -3141,7 +3141,8 @@ hr.light { border-color: #fff; }
 font-weight: 700;
 color: #212529; */ }
 
-#mainNav .navbar-nav .nav-item .nav-link { color: #6c757d; font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-weight: 700; font-size: 0.9rem; padding: 0.75rem 0; }
+#mainNav .navbar-nav .nav-item .nav-link { color: #05A19E; font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-weight: 700; font-size: 0.9rem; padding: 0.75rem 0; }
+#mainNav .navbar-nav .nav-item .nav-link.btn { color: white; }
 
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active { color: #f4623a; }
 
@@ -3157,17 +3158,16 @@ color: #212529; */ }
   #mainNav.navbar-scrolled { box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); background-color: #fff; }
   #mainNav.navbar-scrolled .navbar-brand { color: #212529; }
   #mainNav.navbar-scrolled .navbar-brand:hover { color: #f4623a; }
-  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link { color: #212529; }
+  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link { color: #05A19E; }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover { color: #E3A33B; }
   #mainNav.navbar-scrolled .navbar-nav .nav-item:last-child .nav-link { color: #fff; }
   #mainNav.navbar-scrolled .navbar-nav .nav-item:last-child .nav-link:hover { color: #4C4C4A; } }
 section.grid-section { margin-top: -15em; }
-@media (min-width: 992px) { section.grid-section { margin-top: -17em; } }
 section.grid-section p { min-height: 5em; }
 
 header.masthead { min-height: 90vh; padding-top: 10em; padding-bottom: calc(10rem - 72px); background: url("../img/hero-bkg-opt-3-mobile.jpg"); background-position: center; background-repeat: no-repeat; background-attachment: scroll; background-size: cover; }
-header.masthead .container { padding-top: 5em; }
-@media (min-width: 992px) { header.masthead .container { padding-top: 12em; } }
+header.masthead .container { padding-top: 10%; }
+@media (min-width: 576px) { header.masthead .container { padding-top: 15%; padding-right: 5em; padding-left: 5em; } }
 
 header.masthead h1 { font-size: 2.25rem; }
 
@@ -3186,3 +3186,5 @@ header.masthead h1 { font-size: 2.25rem; }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name { font-size: 1.2rem; }
 
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption { opacity: 1; }
+
+@media (min-width: 576px) { #form .container { width: 50%; } }
