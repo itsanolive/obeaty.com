@@ -35,11 +35,11 @@
 <meta property="og:title" content="OBeaty Design" />
 <meta name="author" content="Copyright &copy; 2020 - OBeaty Design" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="/" />
-<meta property="og:url" content="/" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="OBeaty Design" />
 <script type="application/ld+json">
-{"headline":"OBeaty Design","author":{"@type":"Person","name":"Copyright &copy; 2020 - OBeaty Design"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/%3Cimg%20src=%22assets/img/logos/ob-logo.png%22%20alt=%22OBeaty%20Design%22%3E"},"name":"Copyright &copy; 2020 - OBeaty Design"},"url":"/","@type":"WebSite","name":"OBeaty Design","@context":"http://schema.org"}</script>
+{"author":{"@type":"Person","name":"Copyright &copy; 2020 - OBeaty Design"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/%3Cimg%20src=%22assets/img/logos/ob-logo.png%22%20alt=%22OBeaty%20Design%22%3E"},"name":"Copyright &copy; 2020 - OBeaty Design"},"url":"http://localhost:4000/","@type":"WebSite","headline":"OBeaty Design","name":"OBeaty Design","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -314,8 +314,9 @@
   <div class="container text-center sm:w-50 mx-auto">
     <h2 class="mb-4">Start your project today!</h2>
     <hr class="divider my-4">
-    <form action="https://getform.io/f/145d5445-238c-4cd5-b2de-dd0786fe0c91" method="POST">
+    <form id="contact-form" method="POST" netlify-honeypot="bot-field" data-netlify="true">
       <div class="text-left">
+        <label style="display: none" for="bot-field"><input name="bot-field" /></label>
       
         <label for="name">Full Name</label>
         
