@@ -26,6 +26,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-coffeescript
+include:
+  - _headers
 exclude:
   - Gemfile
   - Gemfile.lock
