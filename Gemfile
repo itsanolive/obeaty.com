@@ -4,7 +4,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 group :noupdate do
   gem "ffi", "= 1.12.1"
-  gem "nokogiri", "1.11.0"
+  gem "nokogiri", "1.13.9"
 end
 
 group :jekyll_plugins do
